@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<style>
+    body,
+    html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/w3images/coffeehouse.jpg");
+        min-height: 75%;
+    }
+
+    .menu {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">ORDER</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <img src="bg.jpg" style="opacity: 20%;">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag"></span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span style="font-size:90px; font-family: 'Amatic SC', cursive;
+            ">kaitlyn's<br>video making</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE VIDEO MAKING</span></h5>
+                <p>Hi!</p>
+                <p>In the video making you get to tell me what kind of video you want me to make. For example, you can
+                    ask me to make a funny skit, how-to video, etc. Or I can also make videos for you like if you want
+                    an intro to
+                    your videos, I can make it for you. </p>
+                <div>
+                    <p>WHEN AVAILABLE:
+                    <p>Weekdays: 4pm-8pm
+                    <p> Weekends: 10am-8pm</p>
+                    </p>
+                    </p>
+                </div>
+                <img src="camera.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong></strong> </p>
+                <p><strong></strong> </p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">HOW YOU'RE GOING TO GET YOUR
+                        VIDEO:</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Text</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Watch it the on the TV (at our house)</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>How we will text to each other</h5>
+                    <p class="w3-text-grey">We will tell each other our texting info</p><br>
+
+                    <h5>What if your video is too long to send</h5>
+                    <p class="w3-text-grey">I will have to send your video in parts</p>
+                    <br>
+
+                    <h5>How long will it take to SEND</h5>
+                    <p class=" w3-text-grey">It will take 5 minutes or under</p><br>
+
+                    <h5>My Texting INFO</h5>
+                    <p class="w3-text-grey">truongnkaitlyn@gmail.com</p>
+                    <br>
+
+                    <h5></h5>
+                    <p class="w3-text-grey"></p>
+                </div>
+
+                <div id="Drinks" class="w3-ntainer menu w3-padding-48 w3-card">
+                    <h5>Address to come to watch it</h5>
+                    <p class="w3-text-grey"></p>123 Main St.<br>
+
+                    <h5>Watching it at our house </h5>
+                    <p class="w3-text-grey"></p> You can also watch it at YOUR house(or ours)and we will stand send it
+                    to you<br>
+
+                    <h5></h5>
+                    <p class="w3-text-grey"></p><br>
+
+                    <h5></h5>
+                    <p class="w3-text-grey"></p><br>
+
+                    <h5></h5>
+                    <p class="w3-text-grey"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PUT YOUR ORDER:</span></h5>
+                <p></p>
+                <p><span class="w3-tag">FYI!</span> You may not get your video on time, but I'll try to get it to you as
+                    quick as possible.</p>
+                <p><strong>Put your order for the custom video:</strong> </p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="What is the video about"
+                            required name="People"></p>
+                    <p><input style="color:black" class="w3-input w3-padding-16 w3-border" type="datetime-local"
+                            placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Message \ Special requirements" required name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Made by Kaitlyn</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
